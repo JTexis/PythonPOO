@@ -20,14 +20,11 @@ while True:
     if option == '1':
         AlumnsNames.append(input('Type the alumns name '))
         print('You have added '+str(AlumnsNames[-1]))
-        numGrades = input('How many grades do you desire to capture?: ')
+        numGrades = int(input('How many grades do you desire to capture?: '))
         Grades = [] # List created to storage the grades
-        for grade in numGrades:
-            Grades.append(input('Grade num. '+str(grade)+' :'))
-        AlumnsGrades.append[Grades]
-
-        print(AlumnsGrades)
-            
+        for grade in range(numGrades):
+            Grades.append(input('Grade num. '+str(grade+1)+' :'))
+        AlumnsGrades.append(Grades)
             
         
 
