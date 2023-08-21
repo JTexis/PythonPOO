@@ -20,14 +20,18 @@ while True:
     option = input('What option do you want to choose? ')
 
     if option == '1':
-        name = input('Type the alumns name ')
+        name = input('Type the alumns name: ')
         print('You have type '+str(name))
         numGrades = int(input('How many grades do you desire to capture?: '))
         Grades = [] # List created to storage the grades
         for grade in range(numGrades):
-            Grades.append(input('Grade num. '+str(grade+1)+' :'))
+            Grades.append(int(input('Grade num. '+str(grade+1)+' :')))
         Alumns[name] = Grades
 
     elif option == '2':
-        print(Alumns)
-            
+        for alumn, grade in Alumns.items():
+            print(alumn)
+            print('Average: '+str(np.mean(grade)))   
+
+    elif option == '3':
+        break          
