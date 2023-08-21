@@ -1,5 +1,7 @@
-AlumnsNames = []
+import numpy as np
+
 AlumnsGrades = []
+Alumns = {}
 
 average = 0
 highest = 0
@@ -18,15 +20,14 @@ while True:
     option = input('What option do you want to choose? ')
 
     if option == '1':
-        AlumnsNames.append(input('Type the alumns name '))
-        print('You have added '+str(AlumnsNames[-1]))
+        name = input('Type the alumns name ')
+        print('You have type '+str(name))
         numGrades = int(input('How many grades do you desire to capture?: '))
         Grades = [] # List created to storage the grades
         for grade in range(numGrades):
             Grades.append(input('Grade num. '+str(grade+1)+' :'))
-        AlumnsGrades.append(Grades)
+        Alumns[name] = Grades
+
+    elif option == '2':
+        print(Alumns)
             
-        
-
-
-
