@@ -3,10 +3,6 @@ import numpy as np
 AlumnsGrades = []
 Alumns = {}
 
-average = 0
-highest = 0
-lowest = 0
-
 option = 0
 totalCal = 0
 
@@ -34,4 +30,17 @@ while True:
             print('Average: '+str(np.mean(grade)))   
 
     elif option == '3':
-        break          
+        for alumn, grade in Alumns.items():
+            print(alumn)
+            print('Lowest: '+str(np.min(grade)))
+
+    elif option == '4':
+        for alumn, grade in Alumns.items():
+            print(alumn)
+            print('Highest: '+str(np.max(grade)))
+
+    elif option == '5':
+        break
+
+print('End of the program ')
+ 
