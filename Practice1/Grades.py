@@ -1,10 +1,6 @@
 import numpy as np
 
-AlumnsGrades = []
 Alumns = {}
-
-option = 0
-totalCal = 0
 
 while True:
     print('OPTIONS:')
