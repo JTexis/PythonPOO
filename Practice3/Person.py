@@ -1,6 +1,6 @@
-class Persona():
+class Person():
 
-    def __init__(self, name:str, RFC:str, CURP:str):
+    def __init__(self, name:str, CURP:str=None, RFC:str=None):
         self.name = name
         self.RFC = RFC
         self.CURP = CURP
