@@ -6,9 +6,9 @@ Persons = []
 
 #Registering person
 name = input('Wnter your full name with spaces(eg:Roberto Javier Texis Aburto): ')
-birthdate = input('Enter your birthdate(eg:DD/MM/YYYY): ')
+birthdate = input('Enter your birthdate(eg:YYYY/MM/DD): ')
 gender = input('Enter your sex gender(eg:male): ')
-entity = input('Enter your birth entity without spaces(eg:BajaCalifornia): ')
+entity = input('Enter your birth entity without upper cases (eg:baja california): ')
 
 
 curp = CURP(name, gender, birthdate, entity)
